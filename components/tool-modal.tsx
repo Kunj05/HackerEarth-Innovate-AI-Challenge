@@ -66,13 +66,6 @@ export function ToolModal({ isOpen, onClose, tool }: ToolModalProps) {
           </div>
         );
       case 'text':
-        return (
-          <Textarea
-            placeholder={`Enter text to ${tool.type === 'text' ? 'simplify' : 'translate'}...`}
-            className="min-h-[200px]"
-          />
-        );
-
       case 'translate':
         return (
           <Textarea
